@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Noto Serif JP", serif;
+  --font-japanese: "Noto Serif JP", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-washi: #F6F2EC;
+  --color-washi-warm: #F0EAE1;
+  --color-washi-card: #FAF7F2;
+  --color-charcoal: #23201D;
+  --color-charcoal-light: #3D3833;
+  --color-ink-muted: #6E6862;
+  --color-wood: #6B4E3D;
+  --color-wood-light: #8E6E59;
+  --color-vermillion: #7A2E2E;
+  --color-vermillion-hover: #632222;
+  --color-gold-subtle: #C4A47C;
+  --color-border-subtle: #E4DDD3;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-washi);
+    color: var(--color-charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle Washi paper grain texture */
+.washi-pattern {
+  background-image: radial-gradient(rgba(107, 78, 61, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Vertical Japanese text helper */
+.vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F2EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D0C5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8ADA0;
+}
+

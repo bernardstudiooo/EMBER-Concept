@@ -1,0 +1,7 @@
+{
+  "name": "EMBER",
+  "description": "An intimate fine dining restaurant featuring a multi-course seasonal chef's tasting menu, live fire craft, and attentive hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
